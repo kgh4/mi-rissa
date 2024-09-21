@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Mi Rissa</title>
+    <style>
+        body {
+            background-color: #E6E6FA; /* Light lavender background */
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        h1 {
+            color: #9370DB; /* Romantic lavender color */
+            font-size: 48px;
+            margin-bottom: 50px;
+            text-align: center;
+            animation: wave 2s infinite;
+        }
+
+        .options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            justify-items: center;
+            margin-top: 20px;
+        }
+
+        .option-button {
+            background-color: #D8BFD8; /* Soft lavender color */
+            border: none;
+            padding: 15px 30px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            margin: 10px;
+            animation: wave 2s infinite ease-in-out;
+        }
+
+        .option-button:hover {
+            background-color: #9370DB; /* Darker lavender on hover */
+        }
+
+        .option-button:focus {
+            outline: none;
+        }
+
+        .lavender {
+            font-size: 48px;
+            position: absolute;
+            animation: float 4s infinite ease-in-out;
+        }
+
+        .left-lavender {
+            left: 10px;
+            top: 20%;
+        }
+
+        .right-lavender {
+            right: 10px;
+            top: 20%;
+        }
+
+        .bottom-left-lavender {
+            left: 10px;
+            bottom: 10%;
+        }
+
+        .bottom-right-lavender {
+            right: 10px;
+            bottom: 10%;
+        }
+
+        @keyframes wave {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Birthday Mi Rissa</h1>
+
+    <!-- Lavender Emoji Decorations -->
+    <div class="lavender left-lavender">💜🌿</div>
+    <div class="lavender right-lavender">🌿💜</div>
+    <div class="lavender bottom-left-lavender">💜🌿</div>
+    <div class="lavender bottom-right-lavender">🌿💜</div>
+
+    <div class="options">
+        <a href="first.html" class="option-button">First</a>
+        <a href="second.html" class="option-button">Second</a>
+        <a href="third.html" class="option-button">Third</a>
+        <a href="fourth.html" class="option-button">Fourth</a>
+    </div>
+</body>
+</html>
